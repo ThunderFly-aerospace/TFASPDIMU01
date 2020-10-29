@@ -1,6 +1,6 @@
 # TFASPD01 - sdp3x differental pressure sensor
 
-ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x]()) and 9-axis motion tracking sensor ([ICM-20948]()). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer (TFASPD01A)[../README.md] or as an airspeed sensor for UAVs with external magnetometer. 
+ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x]()) and 9-axis motion tracking sensor ([ICM-20948]()). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [TFASPD01A](../README.md) or as an airspeed sensor for UAVs with external magnetometer. 
 
 ** IMG PCB **
 
@@ -30,14 +30,17 @@ Full schema is avialible in [PDF]()
 ** IMG **
 
 #### PixHawk autopilot cable
+To increase the transmission quality, it is recommended to create pairs SDA,GND and SCL,+5V on the cable (as shown in image) 
 
+** Cable IMG **
+
+Pinout is in the next table
 | ASPD | PIN | PixHawk |
+| ---:|:---:|:----  |
 |   1  | +5V |  1   |
 |   2  | SCL |  2   |
 |   4  | SDA |  3   |
 |   6  | GND |  4   |
-
-
 
 
 ## Usage 
