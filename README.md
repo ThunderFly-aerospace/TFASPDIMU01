@@ -4,10 +4,33 @@ ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressur
 
 ** IMG PCB **
 
-## WINDGUAGE01
+## Specification
+ * Type: Differential and 9-axis motion sensor board
+ * Weight: *TODO*
+ * Size: 36 x 14 mm
+ * Power: +5 V
+ * Connection: 7pin JST-GH connector, custom pinout
+ 
+**SDP3x**
+ * Range: +/- 125/500 Pa (depending on selected sensor)
+ * Excellent accuracy and repeatability, even below 1Pa 
+ * No zero-point offset, no drift
+ * Calibrated and temperature compensated 
+ * Fast sampling time of 2kHz at 16 bit resolution
+ 
+ **ICM-20948**
+ * 3-axis gyroscope, 3-axis accelerometer, 3-axis compass, and a Digital Motion Processor™ (DMPTM)
+ * Onboard Digital Motion Processor (DMP)
+ * On-Chip 16-bit ADCs and Programmable Filters
+ * 7 MHz SPI or 400 kHz Fast Mode I²C
+ * Digital temperature sensor
+ 
 
-## TFVENTSELF01 - UAV airspeed sensor
-Our *Venturi self* (our woriking title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
+## Example of uses
+### WINDGUAGE01
+
+### TFVENTSELF01 - UAV airspeed sensor
+Our *Venturi self* (our woriking title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
 More details about this solution is available in the repository [TFVENTSELF01]().
 
@@ -59,13 +82,13 @@ Calibration can be verified by mounting of an anemometer to car roof and compari
 
 
 ### PX4
-We are now working on implementing the driver into PX4 stack. 
+> We are now working on implementing the driver into PX4 stack. 
 
 Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer.
 
 
 ### Ardupilot
-We are currently unable to implement the sensor in the Ardupilot flight stack. However, we will be happy to provide assistance with implementation.
+We are currently unable to implement the sensor in the Ardupilot flight stack. However, we will be happy to provide assistance with implementation. You can [contact us](https://www.thunderfly.cz/contact-us.html)
 
 
 #### configuration
