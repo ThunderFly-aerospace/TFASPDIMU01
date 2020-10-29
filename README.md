@@ -77,22 +77,18 @@ Pinout is in the next table
 ## Usage 
 
 ### Python
-For reading data from the sensor, we have prepared a python script in PyMLAB library that uses the pySMBus to readou data. It can be used direcly from a computer with a corresponding converter (for example [USBI2C01A]()) or with use of one-board computers (Odroid, raspberry and similar) that have own smbus output.
-
+For reading data from the sensor, we have prepared a python script in PyMLAB library that uses the pySMBus to readou data. It can be used direcly from a computer with a corresponding converter (for example MLAB [USBI2C01A](https://wiki.mlab.cz/doku.php?id=cs:usbi2c)) or with one-board computers (Odroid, raspberry and similar) that have own smbus output.
 
 #### Calibration vertification
 Calibration can be verified by mounting of an anemometer to car roof and comparing it to speed obtained from GPS (gpsd). This needs to be done in windless weather.
-
 
 ### PX4
 > We are now working on implementing the driver into PX4 stack. 
 
 Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer and thermometer. 
 
-
 ### Ardupilot
 We are currently unable to implement the sensor in the Ardupilot flight stack. However, we will be happy to provide assistance with implementation. You can [contact us](https://www.thunderfly.cz/contact-us.html)
-
 
 #### configuration
 *TODO*
