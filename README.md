@@ -68,7 +68,7 @@ To increase the transmission quality, it is recommended to create pairs SDA,GND 
 |   1  | +5V |  1   |
 |   2  | SCL |  2   |
 |   4  | SDA |  3   |
-|   6  | GND |  4   |
+|   7  | GND |  4   |
 > Pixhawk pinout is listed according to the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf).
 
 ## Usage 
