@@ -19,7 +19,7 @@ ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressur
  * Fast sampling time of 2kHz at 16 bit resolution
  
  **ICM-20948**
- * 3-axis gyroscope, 3-axis accelerometer, 3-axis compass, and a Digital Motion Processor™ (DMPTM)
+ * 3-axis gyroscope, 3-axis accelerometer, 3-axis compass (magnetometer)
  * Onboard Digital Motion Processor (DMP)
  * On-Chip 16-bit ADCs and Programmable Filters
  * 7 MHz SPI or 400 kHz Fast Mode I²C
@@ -33,6 +33,9 @@ ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressur
 Our *Venturi self* (our woriking title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
 More details about this solution is available in the repository [TFVENTSELF01]().
+
+### TFVENTUFO - innovative anemometer
+This anemometer should also based on venturi effect. Thanks to an clever design, it will measure the wind speed from all directions (without knowing the direction).
 
 ## Hardware
 ### Eletronic schema
@@ -84,7 +87,7 @@ Calibration can be verified by mounting of an anemometer to car roof and compari
 ### PX4
 > We are now working on implementing the driver into PX4 stack. 
 
-Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer.
+Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer and thermometer. 
 
 
 ### Ardupilot
