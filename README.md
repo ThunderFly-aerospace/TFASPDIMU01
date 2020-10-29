@@ -2,7 +2,7 @@
 
 ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [TFASPD01A](../README.md) or as an airspeed sensor for UAVs with external magnetometer. 
 
-** IMG PCB **
+![PCB](doc/img/TFASPDIMU01.jpg)
 
 ## Specification
  * Type: Differential and 9-axis motion sensor board
@@ -39,7 +39,7 @@ This anemometer should also based on venturi effect. Thanks to an clever design,
 
 ## Hardware
 ### Eletronic schema
-Full schema is avialible in [PDF]()
+Full schema is avialible in [PDF](/hw/sch_pcb/TFASPDIMU01.pdf)
 
 ### Hardware layout
 ** IMG - technical draft **
@@ -58,14 +58,11 @@ Full schema is avialible in [PDF]()
 > Due to the possible wider use of the sensor, a standard pixhawk pinout is not used.
 
 
-** IMG **
-
 #### PixHawk autopilot cable
 To increase the transmission quality, it is recommended to create pairs SDA,GND and SCL,+5V on the cable (as shown in image) 
 
-** Cable IMG **
+![I2C jstgh](doc/img/jstgh_i2c.jpg)
 
-Pinout is in the next table
 | TFASPD01 | PIN | PixHawk |
 | ---:|:---:|:----  |
 |   1  | +5V |  1   |
