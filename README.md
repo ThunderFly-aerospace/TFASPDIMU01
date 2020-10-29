@@ -80,7 +80,7 @@ For reading data from the sensor, we have prepared a python script in PyMLAB lib
 Calibration can be verified by mounting of an anemometer to car roof and comparing it to speed obtained from GPS (gpsd). This needs to be done in windless weather.
 
 ### PX4
-> We are now working on implementing the driver into PX4 stack. 
+> We are now working on implementation of driver into PX4 stack. 
 
 Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer and thermometer. 
 
