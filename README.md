@@ -1,23 +1,26 @@
 # TFASPD01 - sdp3x differental pressure sensor
 
-ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x]()) and 9-axis motion tracking sensor ([ICM-20948]()). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [TFASPD01A](../README.md) or as an airspeed sensor for UAVs with external magnetometer. 
+ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [TFASPD01A](../README.md) or as an airspeed sensor for UAVs with external magnetometer. 
 
 ** IMG PCB **
 
-## WINDGUAGE01A
+## WINDGUAGE01
 
-## UAV integration
-Our 'Venturi self' (our woriking title :) is airspeed sensor for use on small UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV. First use of this sensor was on our autogyro [TF-G2](). 
+## TFVENTSELF01 - UAV airspeed sensor
+Our *Venturi self* (our woriking title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
+More details about this solution is available in the repository [TFVENTSELF01]().
 
 ## Hardware
-### Schema
+### Eletronic schema
 Full schema is avialible in [PDF]()
 
+### Hardware layout
+** IMG - technical draft **
+
+
 ### Pinout
-
-
-| Pin | I2C | SPI  |
+|Pin #| I2C | SPI  |
 | --- |:---:|:----:|
 | 1   | +5V | +5V  |
 | 2   | SCL | SCK  |
@@ -26,6 +29,8 @@ Full schema is avialible in [PDF]()
 | 5   | --  | CS   |
 | 6   | INT | INT  |
 | 7   | GND | GND  |
+> Due to the possible wider use of the sensor, a standard pixhawk pinout is not used.
+
 
 ** IMG **
 
@@ -35,13 +40,13 @@ To increase the transmission quality, it is recommended to create pairs SDA,GND 
 ** Cable IMG **
 
 Pinout is in the next table
-| ASPD | PIN | PixHawk |
+| TFASPD01 | PIN | PixHawk |
 | ---:|:---:|:----  |
 |   1  | +5V |  1   |
 |   2  | SCL |  2   |
 |   4  | SDA |  3   |
 |   6  | GND |  4   |
-
+> Pixhawk pinout is listed according to the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf).
 
 ## Usage 
 
