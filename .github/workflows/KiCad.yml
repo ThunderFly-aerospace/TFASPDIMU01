@@ -13,7 +13,7 @@ on:
         description: 'ManualRun'
 
 jobs:
-  example:
+  KiCad:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -22,14 +22,21 @@ jobs:
       # Required - kibot config file
         # config: docs.kibot.yaml
         config: .github/workflows/job/basic.kibot.yaml
-      # optional - prefix to output defined in config
-        dir: docs
-      # optional - schematic file
+        dir: hw/cam
         schema: 'hw/sch_pcb/*.sch'
-      # optional - PCB design file
         board: 'hw/sch_pcb/*.kicad_pcb'
+    
     - name: upload results
       uses: actions/upload-artifact@v2
       with:
-        name: docs
-        path: docs
+        name: cam_data
+        path: hw/cam
+    
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v5
+      with:
+        message: "Automation"
+        add: 
+          -"hw/cam/*.pdf"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
