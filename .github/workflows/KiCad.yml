@@ -21,7 +21,7 @@ jobs:
       with:
       # Required - kibot config file
         # config: docs.kibot.yaml
-        config: /.github/workflows/job/basic.kibot.yaml
+        config: .github/workflows/job/basic.kibot.yaml
       # optional - prefix to output defined in config
         dir: docs
       # optional - schematic file
