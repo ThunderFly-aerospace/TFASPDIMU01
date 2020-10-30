@@ -49,7 +49,7 @@ jobs:
       with:
       # Required - kibot config file
         # config: docs.kibot.yaml
-        config: .github/workflows/job/schematics.kibot.yaml
+        config: .github/workflows/job/schematic.kibot.yaml
         dir: hw/cam
         schema: 'hw/sch_pcb/*.sch'
         board: 'hw/sch_pcb/*.kicad_pcb'
