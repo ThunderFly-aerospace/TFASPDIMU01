@@ -11,8 +11,6 @@ on:
     inputs:
       name:
         description: 'ManualRun'
-        required: true
-
 
 jobs:
   example:
@@ -26,9 +24,9 @@ jobs:
       # optional - prefix to output defined in config
         dir: docs
       # optional - schematic file
-        schema: '*.sch'
+        schema: 'hw/sch_pcb/*.sch'
       # optional - PCB design file
-        board: '*.kicad_pcb'
+        board: 'hw/sch_pcb/*.kicad_pcb'
     - name: upload results
       uses: actions/upload-artifact@v2
       with:
