@@ -42,6 +42,7 @@ This anemometer should also based on venturi effect. Thanks to an clever design,
 ## Hardware
 ### Eletronic schema
 Full schema is avialible in [PDF](/hw/sch_pcb/TFASPDIMU01.pdf)
+![schema](/hw/cam/docs/TFASPDIMU01_schematic.svg)
 
 ### Hardware layout
 ** IMG - technical draft **
