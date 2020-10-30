@@ -36,6 +36,6 @@ jobs:
       uses: EndBug/add-and-commit@v5
       with:
         message: 'Automation'
-        add: 'hw/cam/*.pdf'
+        add: 'hw/cam/*.pdf hw/cam/*.pdf' 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
