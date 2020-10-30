@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: MLAB-project/kicad-exports 
+    - uses: MLAB-project/kicad-exports@master
       with:
       # Required - kibot config file
         # config: docs.kibot.yaml
