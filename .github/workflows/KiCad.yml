@@ -7,6 +7,12 @@ on:
     paths:
       - '**.sch'
       - '**.kicad_pcb'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'ManualRun'
+        required: true
+
 
 jobs:
   example:
