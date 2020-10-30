@@ -14,7 +14,15 @@ outputs:
     type: pdf_sch_print
     dir: docs
     options:
-      output: '%p-Schematic_%r.%x'
+      output: '%f_schematic.%x'
+      
+      
+  - name: 'print schema'
+    comment: "Print schematic (PDF)"
+    type: svg_sch_print
+    dir: docs
+    options:
+      output: '%f_schematic.%x'
 
 #   - name: 'print schema'
 #     comment: "Print schematic (SVG)"
