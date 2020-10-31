@@ -14,10 +14,12 @@ if len(sys.argv) not in (2, 3, 4):
 
 port = eval(sys.argv[1])
 
+
+
 if len(sys.argv) == 3:
     import gpsd
     gps_port = str(sys.argv[2])
-    gpsd.connect(gps_port)
+    gpsd.connect('192.168.1.3')
     gps = True
 else:
     gps = False
@@ -175,8 +177,9 @@ while True:
             # gps_ts = gps_data.get_time().timestamp()
             gps_ts = 0
             gps_tt = -999
-            gps_gs = gps_data.speed()
+            gps_gs = gps_data.hspeed
             gps_pos= gps_data.position()
+            print(gps_data, gps_gs)
 
             msg = ("%d;%s;%0.2f;%0.2f;%0.2f;%0.3f;%s;%s;%s\n"% (log_index, ts, dp, hdg_ma, spd_from_dp, temp, gps_ts, gps_tt, gps_gs))
             # print(msg)
