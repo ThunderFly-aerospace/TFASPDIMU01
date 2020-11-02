@@ -19,7 +19,7 @@ port = eval(sys.argv[1])
 if len(sys.argv) == 3:
     import gpsd
     gps_port = str(sys.argv[2])
-    gpsd.connect('192.168.1.3')
+    gpsd.connect(gps_port)
     gps = True
 else:
     gps = False
@@ -111,7 +111,7 @@ else:
 log_name = ("SDP33_tp_log_%s.csv" % datetime.datetime.utcfromtimestamp(time.time()).isoformat())
 filepath = path + log_name
 log_file = open(filepath, "w")
-log_file.write("log_index;system_timestamp;diff_press[Pa];mag_hdg[deg];spd_from_dp[m/s];temp[degC];gps_timestamp;gps_hdg[deg];gps_sogk[m/s]\n")
+log_file.write("log_index;system_timestamp;diff_press[Pa];mag_hdg[deg];spd_from_dp[m/s];temp[degC];gps_time;gps_hdg[deg];gps_gpsd[m/s];lat;lon;alt[m]\n")
 
 #### Measurement ###################################################
 log_index = 0
@@ -140,10 +140,10 @@ while True:
 
         #     if gps_raw.find('VTG') > 0:
         #         gps_parsed = pynmea2.parse(gps_raw)
-        #         gps_tt = gps_parsed.true_track
+        #         gps_time = gps_parsed.true_track
         #         gps_sogk = gps_parsed.spd_over_grnd_kmph
         #         gps_parsed = pynmea2.parse(serialPort.readline())
-        #         gps_ts = gps_parsed.timestamp
+        #         gps_heading = gps_parsed.timestamp
 
         if error == True:
             windgauge.reset()
@@ -174,18 +174,19 @@ while True:
         if gps:
 
             gps_data = gpsd.get_current()
-            # gps_ts = gps_data.get_time().timestamp()
-            gps_ts = 0
-            gps_tt = -999
-            gps_gs = gps_data.hspeed
-            gps_pos= gps_data.position()
-            print(gps_data, gps_gs)
+            # gps_heading = gps_data.get_time().timestamp()
+            gps_heading = gps_data.track
+            gps_time = gps_data.time
+            gps_gspd = gps_data.hspeed
+            # gps_pos= gps_data.position()
+            lat, lon, alt = gps_data.lat, gps_data.lon, gps_data.alt
+            print(lat, lon, alt)
 
-            msg = ("%d;%s;%0.2f;%0.2f;%0.2f;%0.3f;%s;%s;%s\n"% (log_index, ts, dp, hdg_ma, spd_from_dp, temp, gps_ts, gps_tt, gps_gs))
+            msg = ("%d;%s;%0.2f;%0.2f;%0.2f;%0.3f;%s;%s;%s;%s;%s;%f\n"% (log_index, ts, dp, hdg_ma, spd_from_dp, temp, gps_time, gps_heading, gps_gspd, lat, lon, alt))
             # print(msg)
             log_file.write(msg)
             sys.stdout.write("%s; %s; Dp: %+4.2f [Pa]; T: %2.3f [degC];" % (str(log_index).zfill(4), ts, dp, temp))
-            sys.stdout.write(" GPS_TS: %s; GPS_HDG: %s [deg]; GPS_GS: %s [m/s]\n" % (gps_ts, gps_tt, gps_gs))
+            sys.stdout.write(" gps_heading: %s; GPS_HDG: %s [deg]; GPS_GS: %s [m/s]\n" % (gps_heading, gps_time, gps_gspd))
             sys.stdout.write("      MAG_HDG: %+4.2f; SPD_W_DP: %+4.2f [km/h]\n" % (hdg_ma, spd_from_dp))
             sys.stdout.flush()
 
