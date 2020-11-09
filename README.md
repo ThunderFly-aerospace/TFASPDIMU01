@@ -1,8 +1,8 @@
-# TFASPD01 - sdp3x differental pressure sensor and IMU 9-axis unit
+# TFASPDIMU01 - sdp3x differental pressure sensor and IMU 9-axis unit
 
 ![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
 
-ThunderFly TFASPD01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [TFASPD01A](../README.md) or as an airspeed sensor for UAVs with external magnetometer. 
+ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [TFASPD01A](../README.md) or as an airspeed sensor for UAVs with external magnetometer. 
 
 ![PCB](doc/img/TFASPDIMU01_top_big.png)
 
