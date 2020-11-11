@@ -15,7 +15,7 @@ on:
 jobs:
   KiCad:
     runs-on: ubuntu-latest
-    allow-failure: true
+    continue-on-error: true
     steps:
     - uses: actions/checkout@v2
     - uses: MLAB-project/kicad-exports@master
@@ -44,7 +44,7 @@ jobs:
 
   schematics:
     runs-on: ubuntu-latest
-    allow-failure: true
+    continue-on-error: true
     steps:
     - uses: actions/checkout@v2
     - uses: MLAB-project/kicad-exports@master
