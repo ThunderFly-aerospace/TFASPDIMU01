@@ -26,13 +26,13 @@ on:
 #         dir: hw/cam
 #         schema: 'hw/sch_pcb/*.sch'
 #         board: 'hw/sch_pcb/*.kicad_pcb'
-    
+#    
 #     - name: upload results
 #       uses: actions/upload-artifact@v2
 #       with:
 #         name: cam_data
 #         path: hw/cam
-    
+#    
 #     - name: Commit changes
 #       uses: EndBug/add-and-commit@v5
 #       with:
@@ -50,7 +50,7 @@ jobs:
     - name: Kicad-schema
       if: ${{ always() }}
       uses: MLAB-project/kicad-exports@master
-       with:
+      with:
         # Required - kibot config file
         # config: docs.kibot.yaml
         config: .github/workflows/job/schematic.kibot.yaml
