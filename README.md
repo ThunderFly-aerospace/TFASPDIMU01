@@ -66,12 +66,12 @@ To increase the transmission quality, it is recommended to create pairs SDA,GND 
 
 ![I2C jstgh](doc/img/jstgh_i2c.jpg)
 
-| TFASPD01 | PIN | PixHawk |
-| ---:|:---:|:----  |
-|   1  | +5V |  1   |
-|   2  | SCL |  2   |
-|   4  | SDA |  3   |
-|   7  | GND |  4   |
+| TFASPDIMU01 Pin | Sigal | Pixhawk | Color |
+| ---------------:|:-----:|:-------:|-------|
+|   1             | +5V   |  1      | Red   |
+|   2             | SCL   |  2      | Yellow|
+|   4             | SDA   |  3      | Green |
+|   7             | GND   |  4      | Black |
 > Pixhawk pinout is listed according to the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf).
 
 ## Usage 
