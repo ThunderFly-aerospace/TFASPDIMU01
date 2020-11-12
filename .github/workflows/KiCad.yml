@@ -69,7 +69,7 @@ jobs:
         add: 'hw/cam/*.pdf hw/cam/*.svg' 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  PDF z MD:
+  PDF_z_MD:
     runs-on: ubuntu-latest
     steps:
       - name: Create PDF
