@@ -76,5 +76,10 @@ jobs:
         uses: mkrakowitzer/actions-makepdfs@v1.2
         with:
           markdown_dir: .
-          # Location to output PDF files to
           output_dir: .
+          
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: pdf
+          path: .
