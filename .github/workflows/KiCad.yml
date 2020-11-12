@@ -69,18 +69,3 @@ jobs:
         add: 'hw/cam/*.pdf hw/cam/*.svg' 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  PDF_z_MD:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Create PDF
-        uses: mkrakowitzer/actions-makepdfs@v1.2
-        with:
-          markdown_dir: .
-          output_dir: tmp
-          
-      - name: upload results
-        uses: actions/upload-artifact@v2
-        with:
-          name: pdf
-          path: tmp
