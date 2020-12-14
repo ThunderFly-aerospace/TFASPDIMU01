@@ -31,8 +31,8 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
 ## Example of uses
 ### WINDGUAGE01
 
-### TFVENTSELF01 - UAV airspeed sensor
-Our *Venturi self* (our woriking title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
+### TFSLOT01 - UAV airspeed sensor
+Our [TFSLOT]() senzor *"Venturi self"* (our woriking title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
 More details about this solution is available in the repository [TFVENTSELF01]().
 
