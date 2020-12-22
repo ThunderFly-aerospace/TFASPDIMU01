@@ -29,15 +29,23 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
  
 
 ## Example of uses
+
 ### WINDGUAGE01
 
-### TFSLOT01 - UAV airspeed sensor
-Our [TFSLOT]() senzor *"Venturi self"* (our woriking title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
+Ground control station anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03)
 
-More details about this solution is available in the repository [TFVENTSELF01]().
+### TFSLOT01 - UAV airspeed sensor
+Our [TFSLOT]() senzor *"Venturi shelf"* (our working title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
+
+More details about this solution is available in the repository [TFSLOT01](https://github.com/ThunderFly-aerospace/TFSLOT01).
 
 ### TFVENTUFO - innovative anemometer
 This anemometer should also based on venturi effect. Thanks to an clever design, it will measure the wind speed from all directions (without knowing the direction).
+
+### Angle of Attack sensor
+
+In case of mounting on slip-ring bearing the sensor coud sense air AoA of the vehicle.
+
 
 ## Hardware
 ### Eletronic schema
@@ -45,6 +53,8 @@ Full schema is avialible in [PDF](/hw/sch_pcb/TFASPDIMU01.pdf)
 ![schema](/hw/cam/docs/TFASPDIMU01_schematic.svg)
 
 ### Hardware layout
+
+
 ** IMG - technical draft **
 
 
@@ -62,6 +72,8 @@ Full schema is avialible in [PDF](/hw/sch_pcb/TFASPDIMU01.pdf)
 
 
 #### PixHawk autopilot cable
+
+
 To increase the transmission quality, it is recommended to create pairs SDA,GND and SCL,+5V on the cable (as shown in image) 
 
 ![I2C jstgh](doc/img/jstgh_i2c.jpg)
