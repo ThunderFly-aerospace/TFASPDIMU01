@@ -2,7 +2,7 @@
 
 ![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
 
-ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [TFASPD01A](../README.md) or as an airspeed sensor for UAVs with external magnetometer. 
+ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer. 
 
 ![PCB](doc/img/TFASPDIMU01_top_big.png)
 
@@ -14,9 +14,9 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
  * Connection: 7pin JST-GH connector, custom pinout
  
 **SDP3x**
- * Range: +/- 125/500 Pa (depending on selected sensor)
- * Excellent accuracy and repeatability, even below 1Pa 
- * No zero-point offset, no drift
+ * Range: +/- 125/500 Pa (depending on exact sensor type)
+ * Excellent accuracy and repeatability, even below one Pascal 
+ * No zero-point offset, no temperature drift
  * Calibrated and temperature compensated 
  * Fast sampling time of 2kHz at 16 bit resolution
  
@@ -48,7 +48,9 @@ In case of mounting on slip-ring bearing the sensor coud sense air AoA of the ve
 
 
 ## Hardware
+
 ### Eletronic schema
+
 Full schema is avialible in [PDF](/hw/sch_pcb/TFASPDIMU01.pdf)
 ![schema](/hw/cam/docs/TFASPDIMU01_schematic.svg)
 
