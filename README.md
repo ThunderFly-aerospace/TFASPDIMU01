@@ -38,6 +38,8 @@ Ground control station anemometer [WINDGAUGE03](https://github.com/mlab-modules/
 
 Our [TFSLOT](https://github.com/ThunderFly-aerospace/TFSLOT01) senzor is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
+![TFSLOT01 sensor](https://github.com/ThunderFly-aerospace/TFSLOT01/blob/TFSLOT01/doc/img/TFSLOT01A.jpg)
+
 More details about this solution is available in the repository [TFSLOT01](https://github.com/ThunderFly-aerospace/TFSLOT01).
 
 ### TFVENTUFO - innovative anemometer
