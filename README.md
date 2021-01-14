@@ -35,7 +35,8 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
 Ground control station anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03)
 
 ### TFSLOT01 - UAV airspeed sensor
-Our [TFSLOT]() senzor *"Venturi shelf"* (our working title :-)) is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
+
+Our [TFSLOT](https://github.com/ThunderFly-aerospace/TFSLOT01) senzor is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
 More details about this solution is available in the repository [TFSLOT01](https://github.com/ThunderFly-aerospace/TFSLOT01).
 
