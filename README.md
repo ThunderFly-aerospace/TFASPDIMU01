@@ -2,31 +2,31 @@
 
 ![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
 
-ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipted with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer. 
+ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipped with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer.
 
-![PCB](doc/img/TFASPDIMU01_top_big.png)
+![TFASPDIMU01 PCB](doc/img/TFASPDIMU01_top_big.png)
 
 ## Specification
  * Type: Differential and 9-axis motion sensor board
- * Weight: *TODO*
+ * Mass: 3 g
  * Size: 36 x 14 mm
  * Power: +5 V
  * Connection: 7pin JST-GH connector, custom pinout
- 
+
 **SDP3x**
  * Range: +/- 125/500 Pa (depending on exact sensor type)
- * Excellent accuracy and repeatability, even below one Pascal 
+ * Excellent accuracy and repeatability, even below one Pascal
  * No zero-point offset, no temperature drift
- * Calibrated and temperature compensated 
+ * Calibrated and temperature compensated
  * Fast sampling time of 2kHz at 16 bit resolution
- 
+
  **ICM-20948**
  * 3-axis gyroscope, 3-axis accelerometer, 3-axis compass (magnetometer)
  * Onboard Digital Motion Processor (DMP)
  * On-Chip 16-bit ADCs and Programmable Filters
  * 7 MHz SPI or 400 kHz Fast Mode I²C
  * Digital temperature sensor
- 
+
 
 ## Example of uses
 
@@ -47,10 +47,12 @@ This anemometer should also based on venturi effect. Thanks to an clever design,
 
 ### Angle of Attack sensor
 
-In case of mounting on slip-ring bearing the sensor coud sense air AoA of the vehicle.
+In case of mounting on slip-ring bearing the sensor could sense air AoA of the vehicle.
 
 
 ## Hardware
+
+![TFASPDIMU01 sensor](doc/img/TFASPDIMU01.jpg)
 
 ### Eletronic schema
 
@@ -79,7 +81,7 @@ Full schema is avialible in [PDF](/hw/sch_pcb/TFASPDIMU01.pdf)
 #### PixHawk autopilot cable
 
 
-To increase the transmission quality, it is recommended to create pairs SDA,GND and SCL,+5V on the cable (as shown in image) 
+To increase the transmission quality, it is recommended to create pairs SDA,GND and SCL,+5V on the cable (as shown in image)
 
 ![I2C jstgh](doc/img/jstgh_i2c.jpg)
 
@@ -91,18 +93,18 @@ To increase the transmission quality, it is recommended to create pairs SDA,GND 
 |   7             | GND   |  4      | Black |
 > Pixhawk pinout is listed according to the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf).
 
-## Usage 
+## Usage
 
 ### Python
-For reading data from the sensor, we have prepared a python script in PyMLAB library that uses the pySMBus to readou data. It can be used direcly from a computer with a corresponding converter (for example MLAB [USBI2C01A](https://wiki.mlab.cz/doku.php?id=cs:usbi2c)) or with one-board computers (Odroid, raspberry and similar) that have own smbus output.
+For reading data from the sensor, we have prepared a python script in PyMLAB library that uses the pySMBus to readout data. It can be used directly from a computer with a corresponding converter (for example MLAB [USBI2C01A](https://wiki.mlab.cz/doku.php?id=cs:usbi2c)) or with one-board computers (Odroid, raspberry and similar) that have own smbus output.
 
 #### Calibration vertification
 Calibration can be verified by mounting of an anemometer to car roof and comparing it to speed obtained from GPS (gpsd). This needs to be done in windless weather.
 
 ### PX4
-> We are now working on implementation of driver into PX4 stack. 
+> We are now working on implementation of driver into PX4 stack.
 
-Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer and thermometer. 
+Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer and thermometer.
 
 ### Ardupilot
 We are currently unable to implement the sensor in the Ardupilot flight stack. However, we will be happy to provide assistance with implementation. You can [contact us](https://www.thunderfly.cz/contact-us.html)
