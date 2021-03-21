@@ -42,6 +42,10 @@ Our [TFSLOT](https://github.com/ThunderFly-aerospace/TFSLOT01) senzor is an airs
 
 More details about this solution is available in the repository [TFSLOT01](https://github.com/ThunderFly-aerospace/TFSLOT01).
 
+### TFPIPE01 - UAV airspeed sensor
+
+Symmetric variant of TFSLOT sensor for different mounting options [TFPIPE01](https://github.com/ThunderFly-aerospace/TFPIPE01).
+
 ### TFVENTUFO - innovative anemometer
 This anemometer should also based on venturi effect. Thanks to an clever design, it will measure the wind speed from all directions (without knowing the direction).
 
