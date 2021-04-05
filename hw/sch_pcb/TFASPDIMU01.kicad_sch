@@ -3,14 +3,13 @@
   (paper "A4")
 
   (title_block
-    (title "NAME")
-    (date "%F")
-    (rev "REV")
-    (company "Mlab www.mlab.cz")
-    (comment 1 "VERSION")
-    (comment 2 "Short description \\nTwo lines are maximum")
-    (comment 3 "nickname <email@example.com>")
-    (comment 4 "BSD")
+    (title "TFASPDIMU01A")
+    (date "2021-04-05")
+    (rev "A")
+    (company "ThunderFly s.r.o.")
+    (comment 1 "Differential pressure and  IMU \\n for airspeed sensing of UAVs")
+    (comment 3 "jacho <info@thunderfly.cz>")
+    (comment 4 "GPL 3.0")
   )
 
   (lib_symbols
