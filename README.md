@@ -19,6 +19,7 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
  * No zero-point offset, no temperature drift
  * Calibrated and temperature compensated
  * Fast sampling time of 2kHz at 16 bit resolution
+ * I2C address: 0x21 (d33)
 
  **ICM-20948**
  * 3-axis gyroscope, 3-axis accelerometer, 3-axis compass (magnetometer)
@@ -26,7 +27,7 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
  * On-Chip 16-bit ADCs and Programmable Filters
  * 7 MHz SPI or 400 kHz Fast Mode I²C
  * Digital temperature sensor
- * Default I2C address: 0x21 (d33)
+ * Default I2C address: 0x69 (d105), can be changed to 0x68 by moving the resistor R2->R1. 
 
 
 ## Example of uses
