@@ -1,4 +1,6 @@
-(kicad_sch (version 20210126) (generator eeschema)
+(kicad_sch (version 20210406) (generator eeschema)
+
+  (uuid 8226f2ba-4656-489b-aa2f-ec7bc9db29c8)
 
   (paper "A4")
 
@@ -1368,6 +1370,14 @@
   (text "ADDR\n0x21\n" (at 127 41.91 0)
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid a293494f-15d9-445d-98db-285cfc9035df)
+  )
+  (text "SDA" (at 194.31 93.98 0)
+    (effects (font (size 1.524 1.524)) (justify left bottom))
+    (uuid 6fea8f7a-ce19-4f3f-bf97-d7d628081c80)
+  )
+  (text "SCL" (at 194.31 96.52 0)
+    (effects (font (size 1.524 1.524)) (justify left bottom))
+    (uuid 34dd6957-9be5-4a61-91bb-8dad616edddc)
   )
 
   (label "SPI_EXT_SCK_3V3" (at 40.64 34.29 0)
