@@ -27,7 +27,7 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
  * On-Chip 16-bit ADCs and Programmable Filters
  * 7 MHz SPI or 400 kHz Fast Mode I²C
  * Digital temperature sensor
- * Default I2C address: 0x69 (d105), can be changed to 0x68 by moving the resistor R2->R1. 
+ * Default I2C address: 0x68 (0d104), can be changed to 0x69 (0d105) by moving the resistor R2->R1. 
 
 
 ## Example of uses
