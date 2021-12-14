@@ -6,6 +6,8 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
 
 ![TFASPDIMU01 PCB](doc/img/TFASPDIMU01_top_big.png)
 
+TFASPDIMU is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/stores/thunderfly/).
+
 ## Specification
  * Type: Differential and 9-axis motion sensor board
  * Mass: 3 g
