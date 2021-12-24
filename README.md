@@ -50,7 +50,7 @@ More details about this solution is available in the repository [TFSLOT01](https
 
 Symmetric variant of TFSLOT sensor for different mounting options [TFPIPE01](https://github.com/ThunderFly-aerospace/TFPIPE01).
 
-### TFVENTUFO - innovative anemometer
+### TFVENTUFO - omnidirectional anemometer
 This anemometer should also based on venturi effect. Thanks to an clever design, it will measure the wind speed from all directions (without knowing the direction).
 
 ### Angle of Attack sensor
