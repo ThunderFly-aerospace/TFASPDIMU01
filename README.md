@@ -55,7 +55,7 @@ This anemometer should also based on venturi effect. Thanks to an clever design,
 
 ### Angle of Attack sensor
 
-In case of mounting on slip-ring bearing the sensor could sense air AoA of the vehicle.
+In case of mounting on slip-ring bearing the sensor could sense air [AoA of the vehicle](https://en.wikipedia.org/wiki/Angle_of_attack).
 
 
 ## Hardware
