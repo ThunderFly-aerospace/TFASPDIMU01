@@ -10,8 +10,15 @@ on:
       - '**.kicad_pcb'
       - '**.kicad_sch'
       - '**.kicad_pro'
-      - '**.yml'
-      - 'doc/assets'
+      - 'doc/assets/**'
+      - '.github/workflows/*.yml'
+  pull_request:
+    paths:
+      - '**.kicad_pcb'
+      - '**.kicad_sch'
+      - '**.kicad_pro'
+      - 'doc/assets/**'
+      - '.github/workflows/*.yml'
   workflow_dispatch:
   
 env:
@@ -27,13 +34,13 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/erc.kibot.yaml
           schema: ${{ env.schema }}
@@ -45,13 +52,13 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/drc.kibot.yaml
           schema: ${{ env.schema }}
@@ -63,20 +70,20 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/schematics.kibot.yaml
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           dir: ${{ env.dir }}_docs
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: doc_sch
@@ -87,20 +94,20 @@ jobs:
     runs-on: ubuntu-latest
     #continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/placement.kibot.yaml
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           dir: ${{ env.dir }}_docs
         
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/xml.kibot.yaml
           schema: ${{ env.schema }}
@@ -119,7 +126,7 @@ jobs:
           mv hw/sch_pcb/*.xml doc_xml/ || true;
           mv hw/out_docs/*.csv doc_xml/ || true;
           
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: doc_xml
@@ -127,7 +134,7 @@ jobs:
             doc_xml
 
       # Zde se zahazuji debugovaci videa
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: doc_placement
@@ -140,20 +147,20 @@ jobs:
     runs-on: ubuntu-latest
     #continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/report.kibot.yaml
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           dir: ${{ env.dir }}_report
         
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: doc_report
@@ -164,13 +171,13 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/ibom.kibot.yaml
           schema: ${{ env.schema }}
@@ -180,7 +187,7 @@ jobs:
       - name: "Rename output"
         run: for file in $(find ${{env.dir}} -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
         
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: doc_ibom
@@ -193,13 +200,13 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8        
+      - uses: INTI-CMNB/KiBot@v2_dk9        
         with:
           config: ${{ env.kibot }}/gerbers.kibot.yaml
           schema: ${{ env.schema }}
@@ -210,7 +217,7 @@ jobs:
       - name: "Rename output"
         run: for file in $(find ${{env.dir}}_gerbers -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" || true ; done
           
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: hw_cam_profi
@@ -222,20 +229,20 @@ jobs:
     runs-on: ubuntu-latest
     #continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/cad.kibot.yaml
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           dir: ${{ env.dir }}_cad
           
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/render.kibot.yaml
           schema: ${{ env.schema }}
@@ -243,13 +250,13 @@ jobs:
           dir: ${{ env.dir }}_img
           verbose: 3
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: doc_cad
           path: ${{ env.dir }}_cad/**
           
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
           name: doc_img
@@ -257,11 +264,12 @@ jobs:
 
 
   UPDATE_REPO:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
     name: Update repository
     needs: [graphics, gerbers, schematics, placement, report, ibom]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         ref: ${{ github.head_ref }}
         token: ${{ secrets.pat }}
@@ -271,7 +279,7 @@ jobs:
         git submodule update --remote || true
 
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v3.0.0
+      uses: actions/download-artifact@v4
     
     - name: Remove old manufarturing data
       run: | 
@@ -318,5 +326,5 @@ jobs:
         
     - uses: stefanzweifel/git-auto-commit-action@v4.16.0
       with:
-        commit_message: Update actions products
+        commit_message: Automatic update of KiCAD outputs
         add_options: '-A -f'
