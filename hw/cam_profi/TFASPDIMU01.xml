@@ -2,8 +2,8 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFASPDIMU01.kicad_sch</source>
-    <date>2024-07-17T00:46:32+0000</date>
-    <tool>Eeschema 8.0.3+1</tool>
+    <date>2026-02-22T23:17:06+0000</date>
+    <tool>Eeschema 9.0.7+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>TFASPDIMU01A</title>
@@ -27,10 +27,11 @@
     <comp ref="C1">
       <value>100nF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b4c</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -45,10 +46,11 @@
     <comp ref="C2">
       <value>100nF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b4c</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -63,10 +65,11 @@
     <comp ref="C3">
       <value>100nF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b4c</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -81,10 +84,11 @@
     <comp ref="C4">
       <value>100nF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b4c</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -99,10 +103,11 @@
     <comp ref="C5">
       <value>1uF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b50</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -117,10 +122,11 @@
     <comp ref="C6">
       <value>1uF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b50</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -135,10 +141,11 @@
     <comp ref="C7">
       <value>1uF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b50</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -153,10 +160,11 @@
     <comp ref="C8">
       <value>1uF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b50</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -171,10 +179,11 @@
     <comp ref="C9">
       <value>100nF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b4c</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -189,10 +198,11 @@
     <comp ref="C10">
       <value>100nF</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b4c</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -207,10 +217,11 @@
     <comp ref="C11">
       <value>10uF</value>
       <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984812875079b91f8bbd</field>
         <field name="Footprint">Mlab_R:SMD-0805</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -225,10 +236,11 @@
     <comp ref="D1">
       <value>BZV55C-5,6V</value>
       <footprint>Diode_SMD:D_MiniMELF</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984512875079b91f88b1</field>
         <field name="Footprint">Diode_SMD:D_MiniMELF</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="D" description="Diode"/>
@@ -260,9 +272,10 @@
     <comp ref="R1">
       <value>-</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -276,10 +289,11 @@
     <comp ref="R2">
       <value>0R</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984512875079b91f896b</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -294,10 +308,11 @@
     <comp ref="R4">
       <value>10k</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984612875079b91f899f</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -312,10 +327,11 @@
     <comp ref="R5">
       <value>10k</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984612875079b91f899f</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -330,10 +346,11 @@
     <comp ref="R6">
       <value>10k</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984612875079b91f899f</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -348,10 +365,11 @@
     <comp ref="R7">
       <value>10k</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984612875079b91f899f</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -366,10 +384,11 @@
     <comp ref="R8">
       <value>10k</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984612875079b91f899f</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -384,10 +403,11 @@
     <comp ref="R9">
       <value>10k</value>
       <footprint>Mlab_R:SMD-0603</footprint>
+      <datasheet>~</datasheet>
       <fields>
         <field name="UST_ID">5c70984612875079b91f899f</field>
         <field name="Footprint">Mlab_R:SMD-0603</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -728,7 +748,7 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="+1V8">
+    <net code="1" name="+1V8" class="Default">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
@@ -742,7 +762,7 @@
       <node ref="U6" pin="10" pinfunction="OE" pintype="input"/>
       <node ref="U6" pin="2" pinfunction="VCCA" pintype="power_in"/>
     </net>
-    <net code="2" name="+3V3">
+    <net code="2" name="+3V3" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
@@ -754,7 +774,7 @@
       <node ref="U4" pin="5" pinfunction="VOUT" pintype="power_out"/>
       <node ref="U6" pin="19" pinfunction="VCCB" pintype="power_in"/>
     </net>
-    <net code="3" name="+5V">
+    <net code="3" name="+5V" class="Default">
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
@@ -765,71 +785,71 @@
       <node ref="U5" pin="1" pinfunction="VIN" pintype="power_in"/>
       <node ref="U5" pin="3" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="4" name="/!SPI_SS1_1V8">
+    <net code="4" name="/!SPI_SS1_1V8" class="Default">
       <node ref="U2" pin="22" pinfunction="~{CS}" pintype="input"/>
       <node ref="U6" pin="5" pinfunction="A4" pintype="bidirectional"/>
     </net>
-    <net code="5" name="/!SPI_SS1_3V3">
+    <net code="5" name="/!SPI_SS1_3V3" class="Default">
       <node ref="J1" pin="5" pintype="input"/>
       <node ref="U6" pin="16" pinfunction="B4" pintype="bidirectional"/>
     </net>
-    <net code="6" name="/INT1_1V8">
+    <net code="6" name="/INT1_1V8" class="Default">
       <node ref="U2" pin="12" pinfunction="INT1" pintype="output"/>
       <node ref="U6" pin="1" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="7" name="/INT1_3V3">
+    <net code="7" name="/INT1_3V3" class="Default">
       <node ref="J1" pin="6" pintype="input"/>
       <node ref="U6" pin="20" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="8" name="/P_SCL_1V8">
+    <net code="8" name="/P_SCL_1V8" class="Default">
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U2" pin="7" pinfunction="AUX_CL" pintype="output"/>
       <node ref="U6" pin="4" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="9" name="/P_SCL_3V3">
+    <net code="9" name="/P_SCL_3V3" class="Default">
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="SCL" pintype="unspecified"/>
       <node ref="U6" pin="17" pinfunction="B3" pintype="bidirectional"/>
     </net>
-    <net code="10" name="/P_SDA_1V8">
+    <net code="10" name="/P_SDA_1V8" class="Default">
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U2" pin="21" pinfunction="AUX_DA" pintype="bidirectional"/>
       <node ref="U6" pin="6" pinfunction="A5" pintype="bidirectional"/>
     </net>
-    <net code="11" name="/P_SDA_3V3">
+    <net code="11" name="/P_SDA_3V3" class="Default">
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="SDA" pintype="unspecified"/>
       <node ref="U6" pin="15" pinfunction="B5" pintype="bidirectional"/>
     </net>
-    <net code="12" name="/SPI_EXT_MISO_1V8">
+    <net code="12" name="/SPI_EXT_MISO_1V8" class="Default">
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
       <node ref="U2" pin="9" pinfunction="SDO/AD0" pintype="bidirectional"/>
       <node ref="U6" pin="3" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="13" name="/SPI_EXT_MISO_3V3">
+    <net code="13" name="/SPI_EXT_MISO_3V3" class="Default">
       <node ref="J1" pin="3" pintype="input"/>
       <node ref="U6" pin="18" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="14" name="/SPI_EXT_MOSI_1V8">
+    <net code="14" name="/SPI_EXT_MOSI_1V8" class="Default">
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="U2" pin="24" pinfunction="SDA/SDI" pintype="bidirectional"/>
       <node ref="U6" pin="7" pinfunction="A6" pintype="bidirectional"/>
     </net>
-    <net code="15" name="/SPI_EXT_MOSI_3V3">
+    <net code="15" name="/SPI_EXT_MOSI_3V3" class="Default">
       <node ref="J1" pin="4" pintype="input"/>
       <node ref="U6" pin="14" pinfunction="B6" pintype="bidirectional"/>
     </net>
-    <net code="16" name="/SPI_EXT_SCK_1V8">
+    <net code="16" name="/SPI_EXT_SCK_1V8" class="Default">
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U2" pin="23" pinfunction="SCL/SCLK" pintype="input"/>
       <node ref="U6" pin="8" pinfunction="A7" pintype="bidirectional"/>
     </net>
-    <net code="17" name="/SPI_EXT_SCK_3V3">
+    <net code="17" name="/SPI_EXT_SCK_3V3" class="Default">
       <node ref="J1" pin="2" pintype="input"/>
       <node ref="U6" pin="13" pinfunction="B7" pintype="bidirectional"/>
     </net>
-    <net code="18" name="GND">
+    <net code="18" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -861,56 +881,56 @@
       <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
       <node ref="U6" pin="11" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="19" name="Net-(U2-REGOUT)">
+    <net code="19" name="Net-(U2-REGOUT)" class="Default">
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="U2" pin="10" pinfunction="REGOUT" pintype="passive"/>
     </net>
-    <net code="20" name="unconnected-(U1-IRQn-Pad4)">
+    <net code="20" name="unconnected-(U1-IRQn-Pad4)" class="Default">
       <node ref="U1" pin="4" pinfunction="IRQn" pintype="unspecified+no_connect"/>
     </net>
-    <net code="21" name="unconnected-(U2-NC-Pad1)">
+    <net code="21" name="unconnected-(U2-NC-Pad1)" class="Default">
       <node ref="U2" pin="1" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="22" name="unconnected-(U2-NC-Pad2)">
+    <net code="22" name="unconnected-(U2-NC-Pad2)" class="Default">
       <node ref="U2" pin="2" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="23" name="unconnected-(U2-NC-Pad3)">
+    <net code="23" name="unconnected-(U2-NC-Pad3)" class="Default">
       <node ref="U2" pin="3" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="24" name="unconnected-(U2-NC-Pad4)">
+    <net code="24" name="unconnected-(U2-NC-Pad4)" class="Default">
       <node ref="U2" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="25" name="unconnected-(U2-NC-Pad5)">
+    <net code="25" name="unconnected-(U2-NC-Pad5)" class="Default">
       <node ref="U2" pin="5" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="26" name="unconnected-(U2-NC-Pad6)">
+    <net code="26" name="unconnected-(U2-NC-Pad6)" class="Default">
       <node ref="U2" pin="6" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="27" name="unconnected-(U2-NC-Pad14)">
+    <net code="27" name="unconnected-(U2-NC-Pad14)" class="Default">
       <node ref="U2" pin="14" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="28" name="unconnected-(U2-NC-Pad15)">
+    <net code="28" name="unconnected-(U2-NC-Pad15)" class="Default">
       <node ref="U2" pin="15" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="29" name="unconnected-(U2-NC-Pad16)">
+    <net code="29" name="unconnected-(U2-NC-Pad16)" class="Default">
       <node ref="U2" pin="16" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="30" name="unconnected-(U2-NC-Pad17)">
+    <net code="30" name="unconnected-(U2-NC-Pad17)" class="Default">
       <node ref="U2" pin="17" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="31" name="unconnected-(U2-RESV-Pad19)">
+    <net code="31" name="unconnected-(U2-RESV-Pad19)" class="Default">
       <node ref="U2" pin="19" pinfunction="RESV" pintype="no_connect"/>
     </net>
-    <net code="32" name="unconnected-(U4-NC-Pad4)">
+    <net code="32" name="unconnected-(U4-NC-Pad4)" class="Default">
       <node ref="U4" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="33" name="unconnected-(U5-NC-Pad4)">
+    <net code="33" name="unconnected-(U5-NC-Pad4)" class="Default">
       <node ref="U5" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="34" name="unconnected-(U6-A8-Pad9)">
+    <net code="34" name="unconnected-(U6-A8-Pad9)" class="Default">
       <node ref="U6" pin="9" pinfunction="A8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="35" name="unconnected-(U6-B8-Pad12)">
+    <net code="35" name="unconnected-(U6-B8-Pad12)" class="Default">
       <node ref="U6" pin="12" pinfunction="B8" pintype="bidirectional+no_connect"/>
     </net>
   </nets>

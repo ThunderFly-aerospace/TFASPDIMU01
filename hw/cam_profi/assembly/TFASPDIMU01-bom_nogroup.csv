@@ -1,14 +1,27 @@
 Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,ust_id
-1,Unpolarized capacitor,C,C1C2C3C4C9C10,100nF,SMD-0603,6,~,5c70984712875079b91f8b4c
-2,Unpolarized capacitor,C,C5C6C7C8,1uF,SMD-0603,4,~,5c70984712875079b91f8b50
-3,Unpolarized capacitor,C,C11,10uF,SMD-0805,1,~,5c70984812875079b91f8bbd
-4,Diode,D,D1,"BZV55C-5,6V",D_MiniMELF,1,~,5c70984512875079b91f88b1
-5,1x08 2.54 mm pitch header,SM07B-GHS-TB,J1,SM07B-GHS-TB,JST_GH_SM07B-GHS-TB_1x07-1MP_P1.25mm_Horizontal,1,,5c7250081287500b4e112e78
-6,Resistor,R,R2,0R,SMD-0603,1,~,5c70984512875079b91f896b
-7,Resistor,R,R4R5R6R7R8R9,10k,SMD-0603,6,~,5c70984612875079b91f899f
-8,Resistor,R,R1,-,SMD-0603,1,~,
-9,"InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI, QFN-24",ICM-20948,U2,ICM-20948,InvenSense_QFN-24_3x3mm_P0.4mm,1,http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf,5c725a431287500b4e112ef5
-10,"300mA Low-dropout Voltage Regulator, Vout 1.8V, Vin up to 5.5V, SOT-23",MIC5504-1.8YM5,U5,MIC5504-1.8YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7256781287500b4e112eba
-11,"300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23",MIC5504-3.3YM5,U4,MIC5504-3.3YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7255e81287500b4e112ea2
-12,,SDP3x,U1,SDP3x,SDP3x,1,,5c70984812875079b91f8bd0
-13,"Bidirectional  level-shifting voltage translator, TSSOP-20",TXS0108EPW,U6,TXS0108EPW,TSSOP-20_4.4x6.5mm_P0.65mm,1,www.ti.com/lit/ds/symlink/txs0108e.pdf,5c7258471287500b4e112edd
+1,Unpolarized capacitor,C,C1,100nF,SMD-0603,1,~,5c70984712875079b91f8b4c
+2,Unpolarized capacitor,C,C10,100nF,SMD-0603,1,~,5c70984712875079b91f8b4c
+3,Unpolarized capacitor,C,C2,100nF,SMD-0603,1,~,5c70984712875079b91f8b4c
+4,Unpolarized capacitor,C,C3,100nF,SMD-0603,1,~,5c70984712875079b91f8b4c
+5,Unpolarized capacitor,C,C4,100nF,SMD-0603,1,~,5c70984712875079b91f8b4c
+6,Unpolarized capacitor,C,C9,100nF,SMD-0603,1,~,5c70984712875079b91f8b4c
+7,Unpolarized capacitor,C,C5,1uF,SMD-0603,1,~,5c70984712875079b91f8b50
+8,Unpolarized capacitor,C,C6,1uF,SMD-0603,1,~,5c70984712875079b91f8b50
+9,Unpolarized capacitor,C,C7,1uF,SMD-0603,1,~,5c70984712875079b91f8b50
+10,Unpolarized capacitor,C,C8,1uF,SMD-0603,1,~,5c70984712875079b91f8b50
+11,Unpolarized capacitor,C,C11,10uF,SMD-0805,1,~,5c70984812875079b91f8bbd
+12,Diode,D,D1,"BZV55C-5,6V",D_MiniMELF,1,~,5c70984512875079b91f88b1
+13,1x08 2.54 mm pitch header,SM07B-GHS-TB,J1,SM07B-GHS-TB,JST_GH_SM07B-GHS-TB_1x07-1MP_P1.25mm_Horizontal,1,,5c7250081287500b4e112e78
+14,Resistor,R,R2,0R,SMD-0603,1,~,5c70984512875079b91f896b
+15,Resistor,R,R4,10k,SMD-0603,1,~,5c70984612875079b91f899f
+16,Resistor,R,R5,10k,SMD-0603,1,~,5c70984612875079b91f899f
+17,Resistor,R,R6,10k,SMD-0603,1,~,5c70984612875079b91f899f
+18,Resistor,R,R7,10k,SMD-0603,1,~,5c70984612875079b91f899f
+19,Resistor,R,R8,10k,SMD-0603,1,~,5c70984612875079b91f899f
+20,Resistor,R,R9,10k,SMD-0603,1,~,5c70984612875079b91f899f
+21,Resistor,R,R1,-,SMD-0603,1,~,
+22,"InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI, QFN-24",ICM-20948,U2,ICM-20948,InvenSense_QFN-24_3x3mm_P0.4mm,1,http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf,5c725a431287500b4e112ef5
+23,"300mA Low-dropout Voltage Regulator, Vout 1.8V, Vin up to 5.5V, SOT-23",MIC5504-1.8YM5,U5,MIC5504-1.8YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7256781287500b4e112eba
+24,"300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23",MIC5504-3.3YM5,U4,MIC5504-3.3YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7255e81287500b4e112ea2
+25,,SDP3x,U1,SDP3x,SDP3x,1,,5c70984812875079b91f8bd0
+26,"Bidirectional  level-shifting voltage translator, TSSOP-20",TXS0108EPW,U6,TXS0108EPW,TSSOP-20_4.4x6.5mm_P0.65mm,1,www.ti.com/lit/ds/symlink/txs0108e.pdf,5c7258471287500b4e112edd
